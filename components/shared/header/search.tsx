@@ -13,15 +13,16 @@ import { getAllCategories } from '@/lib/actions/product.actions'
 
 export default async function Search() {
   const categories = await getAllCategories()
+
   return (
     <form
       action='/search'
       method='GET'
-      className='flex  items-stretch h-10 '
+      className='flex items-center h-10'
     >
       <Select name='category'>
-        <SelectTrigger className='w-auto h-full dark:border-gray-200 bg-gray-100 text-black border-r  rounded-r-none rounded-l-md'>
-          <SelectValue placeholder='All' />
+        <SelectTrigger className='h-full bg-gray-100 text-black text-sm px-4 border border-gray-300 rounded-l-md rounded-r-none shadow-none focus:outline-none focus:ring-0'>
+          <SelectValue placeholder='All' className='text-black' />
         </SelectTrigger>
         <SelectContent position='popper'>
           <SelectItem value='all'>All</SelectItem>
@@ -32,17 +33,19 @@ export default async function Search() {
           ))}
         </SelectContent>
       </Select>
+
       <Input
-        className='flex-1 rounded-none dark:border-gray-200 bg-gray-100 text-black text-base h-full'
+        className='flex-1 h-full text-sm bg-gray-100 text-black border-t border-b border-gray-300 rounded-none focus:ring-0 focus:outline-none'
         placeholder={`Search Site ${APP_NAME}`}
         name='q'
         type='search'
       />
+
       <button
         type='submit'
-        className='bg-primary text-black rounded-s-none rounded-e-md h-full px-3 py-2 '
+        className='h-full px-3 bg-primary text-black text-sm border border-gray-300 border-l-0 rounded-r-md'
       >
-        <SearchIcon className='w-6 h-6' />
+        <SearchIcon className='w-5 h-5' />
       </button>
     </form>
   )
