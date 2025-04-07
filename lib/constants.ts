@@ -8,7 +8,7 @@ export const APP_SLOGAN =
   process.env.NEXT_PUBLIC_APP_SLOGAN || 'Spend less, enjoy more.'
 export const APP_DESCRIPTION =
   process.env.NEXT_PUBLIC_APP_DESCRIPTION ||
-  'An Amazon clone built with Next.js and MongoDB'
+  'Simple Online E commerce store that sells clothings and accessories'
 
   export const APP_COPYRIGHT =
   process.env.NEXT_PUBLIC_APP_COPYRIGHT ||

@@ -36,7 +36,7 @@ export default async function Search() {
 
       <Input
         className='flex-1 h-full text-sm bg-gray-100 text-black border-t border-b border-gray-300 rounded-none focus:ring-0 focus:outline-none'
-        placeholder={`Search Site ${APP_NAME}`}
+        placeholder={`Search On ${APP_NAME}`}
         name='q'
         type='search'
       />
