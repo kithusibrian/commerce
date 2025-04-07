@@ -45,7 +45,7 @@ export default async function Search() {
         type='submit'
         className='h-full px-3 bg-primary text-black text-sm border border-gray-300 border-l-0 rounded-r-md'
       >
-        <SearchIcon className='w-5 h-5' />
+        <SearchIcon className='w-5 h-5 text-white' />
       </button>
     </form>
   )
